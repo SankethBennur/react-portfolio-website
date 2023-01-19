@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Code+Pro&display=swap');
+
 body {
     background: rgba(25, 35, 50, 1);
-    color: white;
+    color: rgba(180, 180, 180, 1);
+    font-family: 'Source Code Pro', monospace;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
 }

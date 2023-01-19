@@ -6,7 +6,7 @@ import Contents from "../components/Contents";
 
 function Home() {
   return (
-    <Grid container sx={{ color: "turquoise" }}>
+    <Grid container>
       <Navigation />
       <Contents />
     </Grid>
