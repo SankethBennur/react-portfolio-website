@@ -5,12 +5,12 @@ import Navigation from "../components/Navigation";
 import Contents from "../components/Contents";
 
 function Home() {
-  return (
-    <Grid container>
-      <Navigation />
-      <Contents />
-    </Grid>
-  );
+    return (
+        <Grid container>
+            <Navigation />
+            <Contents />
+        </Grid>
+    );
 }
 
 export default Home;
