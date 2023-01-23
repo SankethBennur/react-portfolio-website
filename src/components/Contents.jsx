@@ -1,16 +1,16 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import Greetings from "./Greetings";
-import WorkExperience from "./WorkExperience";
-import Projects from "./Projects";
+import ResumeSection from "./ResumeSection";
 
 function Contents() {
 	return (
-		<Grid xs={8} sx={{ border: 2, borderColor: "white" }}>
-			<h2 style={{ color: "turquoise" }}>__Content__</h2>
+		<Grid item xs={9} sx={{ border: 2, borderColor: "white" }}>
 			<Greetings />
-			<WorkExperience />
-			<Projects />
+
+			<ResumeSection section={"Work Experience"} />
+
+			<ResumeSection section={"Projects"} />
 		</Grid>
 	);
 }
