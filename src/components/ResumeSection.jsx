@@ -6,10 +6,15 @@ function ResumeSection({ section }) {
 	let content = [];
 
 	// API call based on section - Work Experience
-	if (section === "Work Experience")
+	if (section === "Work Experience") {
 		content.push({
 			title: "Quickmetrix",
-			links: [{ text: "Company", url: "www.google.com" }],
+			links: [
+				{
+					text: "Company",
+					url: "https://www.linkedin.com/company/quickmetrix/",
+				},
+			],
 			subHeading: {
 				text: "Software Engineer - Full Stack Developer",
 				date: "Jan 2022 - Present",
@@ -21,14 +26,33 @@ function ResumeSection({ section }) {
 				"Built Application Systems for cron job scheduling using Google Cloud Scheduler, sending and receiving mails for Gmail users using Gmail API, fetching Instagram Insights for client Business IDs using Facebook Graph API and many others.",
 			],
 		});
+		content.push({
+			title: "RSutra Analytics and Consulting",
+			links: [
+				{
+					text: "Company",
+					url: "https://www.linkedin.com/company/racpl/",
+				},
+			],
+			subHeading: {
+				text: "Robotic Process Automation Developer",
+				date: "Jan 2020 - Jun 2020",
+			},
+			desc: [
+				"Worked in a Mumbai-based startup company which facilitates IT and Business Intelligence to various clients.",
+				"Trained on Robotic Process Automation in UiPath Studio to automate business procedures and tasks.",
+				"Developed a robotic process in UiPath for Web-Scraping to extract Currency Exchange Rates from xe.com website and populate an Excel Spreadsheet with the currencies, and to perform Email-Automation.",
+			],
+		});
+	}
 
 	// API call based on section - Work Experience
 	if (section === "Projects") {
 		content.push({
 			title: "Netflix",
 			links: [
-				{ text: "Demo", url: "www.google.com" },
-				{ text: "Link", url: "www.google.com" },
+				{ text: "Demo", url: "https://www.google.com" },
+				{ text: "Link", url: "https://www.google.com" },
 			],
 			subHeading: {
 				text: "Technologies: MongoDB, Express, React, Node.js, JSON Web Tokens",
@@ -44,7 +68,7 @@ function ResumeSection({ section }) {
 
 		content.push({
 			title: "Web Scraper with Node.js",
-			links: [{ text: "Link", url: "www.google.com" }],
+			links: [{ text: "Link", url: "https://www.google.com" }],
 			subHeading: {
 				text: "Technologies: Node.js, Express, MongoDB, Cheerio, JSON",
 			},
@@ -57,7 +81,7 @@ function ResumeSection({ section }) {
 
 		content.push({
 			title: "Google and EY - BrightNetwork Internship Experience UK",
-			links: [{ text: "Link", url: "www.google.com" }],
+			links: [{ text: "Link", url: "https://www.google.com" }],
 			subHeading: {
 				text: "Technologies: Python, Node.js, Express",
 			},
@@ -87,7 +111,7 @@ function ResumeSection({ section }) {
 									<>
 										&nbsp;
 										<a
-											href="https://www.google.com"
+											href={__link.url}
 											target="_blank"
 											rel="noopener noreferrer"
 										>

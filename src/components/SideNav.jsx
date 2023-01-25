@@ -63,10 +63,19 @@ function SideNav() {
 					</h3>
 				</Grid>
 				<Grid>
-					<h3>Connect with me:</h3>
-					<p>Phone: +91 9876 543 210</p>
-					<p>Email: xyz@gmail.com</p>
-					<p>Github: github.com/sankethbennur</p>
+					<h3>Connect with me</h3>
+					<p>Phone:&nbsp;+91 9876 543 210</p>
+					<p>Email:&nbsp;xyz@gmail.com</p>
+					<p>
+						Github:&nbsp;
+						<a
+							href={"https://github.com/sankethbennur"}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							github.com/sankethbennur
+						</a>
+					</p>
 				</Grid>
 			</Drawer>
 		</Grid>
