@@ -5,7 +5,7 @@ import ResumeSection from "./ResumeSection";
 
 function Contents() {
 	return (
-		<Grid item xs={9} sx={{ border: 2, borderColor: "white" }}>
+		<Grid item xs={8} sx={{ border: 2, borderColor: "white" }}>
 			<Greetings />
 
 			<ResumeSection section={"Work Experience"} />

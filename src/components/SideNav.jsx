@@ -22,30 +22,26 @@ function SideNav() {
 					display: { xs: "none", sm: "block" },
 					"& .MuiDrawer-paper": {
 						boxSizing: "border-box",
-						width: "25vw",
-						// backgroundColor: "rgba(0,0,0, 0)",
+						width: "33vw",
+						backgroundColor: "rgba(0,0,0, 0)",
+						color: "rgba(180,180,180,1)",
 					},
 				}}
 				open
 			>
-				<div>
-					{/* <Box
-						component="img"
-						sx={{ objectFit: "contain" }}
-						alt="Sanketh Bennur"
-						src={myPhoto}
-					/> */}
-					<Box
-						component="img"
-						src={myPhoto}
-						alt={"post"}
-						width="100%"
-						// height="50%"
-						position="relative"
-						display="flex"
-						zIndex={0}
-						sx={{ objectFit: "contain" }}
-					/>
+				<>
+					<Box sx={{ p: 10 }}>
+						<Box
+							component="img"
+							src={myPhoto}
+							alt={"post"}
+							width="100%"
+							position="relative"
+							display="flex"
+							zIndex={0}
+							sx={{ objectFit: "contain" }}
+						/>
+					</Box>
 					<Grid>
 						<p>loc_1</p>
 						<p>loc_2</p>
@@ -80,7 +76,7 @@ function SideNav() {
 						<p>loc_4</p>
 						<p>loc_5</p>
 					</Grid>
-				</div>
+				</>
 			</Drawer>
 		</Grid>
 	);
