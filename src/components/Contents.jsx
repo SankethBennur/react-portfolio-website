@@ -6,11 +6,11 @@ import ResumeSection from "./ResumeSection";
 function Contents() {
 	return (
 		<Grid item xs={8}>
-			<Greetings id="greetings" />
+			<Greetings />
 
-			<ResumeSection id="work_experience" section={"Work Experience"} />
+			<ResumeSection section={"Work Experience"} />
 
-			<ResumeSection id="projects" section={"Projects"} />
+			<ResumeSection section={"Projects"} />
 		</Grid>
 	);
 }

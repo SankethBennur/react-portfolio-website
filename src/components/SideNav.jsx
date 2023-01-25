@@ -1,6 +1,7 @@
+import React from "react";
 import { Drawer, Grid } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
+import { HashLink } from "react-router-hash-link";
 import "./SideNav.css";
 // import myPhoto from "../assets/images/me.jpg";
 import myPhoto from "../assets/images/db.jpg";
@@ -30,37 +31,43 @@ function SideNav() {
 				}}
 				open
 			>
-				<>
+				<Box
+					sx={{
+						py: 10,
+						display: "flex",
+						justifyContent: "center",
+					}}
+				>
 					<Box
-						sx={{
-							py: 10,
-							display: "flex",
-							justifyContent: "center",
-						}}
-					>
-						<Box
-							component="img"
-							src={myPhoto}
-							alt={"post"}
-							width="50%"
-							position="relative"
-							display="flex"
-							zIndex={0}
-							sx={{ objectFit: "contain" }}
-						/>
-					</Box>
-					<Grid>
-						<h3>
-							<a href="#greetings">Back to Top</a>
-						</h3>
-						<h3>
-							<a href="#work_experience">Work Experience</a>
-						</h3>
-						<h3>
-							<a href="#projects">Projects</a>
-						</h3>
-					</Grid>
-				</>
+						component="img"
+						src={myPhoto}
+						alt={"post"}
+						width="50%"
+						position="relative"
+						display="flex"
+						zIndex={0}
+						sx={{ objectFit: "contain" }}
+					/>
+				</Box>
+				<Grid>
+					<h3>
+						<HashLink to="#greetings">Back to Top</HashLink>
+					</h3>
+					<h3>
+						<HashLink to="#work_experience">
+							Work Experience
+						</HashLink>
+					</h3>
+					<h3>
+						<HashLink to="#projects">Projects</HashLink>
+					</h3>
+				</Grid>
+				<Grid>
+					<h3>Connect with me:</h3>
+					<p>Phone: +91 9876 543 210</p>
+					<p>Email: xyz@gmail.com</p>
+					<p>Github: github.com/sankethbennur</p>
+				</Grid>
 			</Drawer>
 		</Grid>
 	);

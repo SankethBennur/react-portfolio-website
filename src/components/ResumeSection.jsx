@@ -69,11 +69,10 @@ function ResumeSection({ section }) {
 		});
 	}
 
-	// console.log(section);
-	// console.log(content);
+	const __id = section.split(" ").join("_").toLowerCase();
 
 	return (
-		<Grid sx={{ border: 1 }}>
+		<Grid id={__id} sx={{ border: 1 }}>
 			<h2>{section}</h2>
 			{content.map((c) => {
 				return (
