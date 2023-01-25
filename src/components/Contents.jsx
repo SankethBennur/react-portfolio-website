@@ -5,12 +5,12 @@ import ResumeSection from "./ResumeSection";
 
 function Contents() {
 	return (
-		<Grid item xs={8} sx={{ border: 2, borderColor: "white" }}>
-			<Greetings />
+		<Grid item xs={8}>
+			<Greetings id="greetings" />
 
-			<ResumeSection section={"Work Experience"} />
+			<ResumeSection id="work_experience" section={"Work Experience"} />
 
-			<ResumeSection section={"Projects"} />
+			<ResumeSection id="projects" section={"Projects"} />
 		</Grid>
 	);
 }

@@ -2,13 +2,14 @@ import { Drawer, Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import "./SideNav.css";
-import myPhoto from "../assets/images/me.jpg";
+// import myPhoto from "../assets/images/me.jpg";
+import myPhoto from "../assets/images/db.jpg";
 
 function SideNav() {
 	return (
 		<Grid
 			sx={{
-				border: 1,
+				// border: 1,
 				display: "flex",
 				flexDirection: "column",
 				overflowY: "auto",
@@ -30,12 +31,18 @@ function SideNav() {
 				open
 			>
 				<>
-					<Box sx={{ p: 10 }}>
+					<Box
+						sx={{
+							py: 10,
+							display: "flex",
+							justifyContent: "center",
+						}}
+					>
 						<Box
 							component="img"
 							src={myPhoto}
 							alt={"post"}
-							width="100%"
+							width="50%"
 							position="relative"
 							display="flex"
 							zIndex={0}
@@ -43,38 +50,15 @@ function SideNav() {
 						/>
 					</Box>
 					<Grid>
-						<p>loc_1</p>
-						<p>loc_2</p>
-						<p>loc_3</p>
-						<p>loc_4</p>
-						<p>loc_5</p>
-						<p>loc_1</p>
-						<p>loc_2</p>
-						<p>loc_3</p>
-						<p>loc_4</p>
-						<p>loc_5</p>
-						<p>=====</p>
-						<p>loc_1</p>
-						<p>loc_2</p>
-						<p>loc_3</p>
-						<p>loc_4</p>
-						<p>loc_5</p>
-						<p>loc_1</p>
-						<p>loc_2</p>
-						<p>loc_3</p>
-						<p>loc_4</p>
-						<p>loc_5</p>
-						<p>=====</p>
-						<p>loc_1</p>
-						<p>loc_2</p>
-						<p>loc_3</p>
-						<p>loc_4</p>
-						<p>loc_5</p>
-						<p>loc_1</p>
-						<p>loc_2</p>
-						<p>loc_3</p>
-						<p>loc_4</p>
-						<p>loc_5</p>
+						<h3>
+							<a href="#greetings">Back to Top</a>
+						</h3>
+						<h3>
+							<a href="#work_experience">Work Experience</a>
+						</h3>
+						<h3>
+							<a href="#projects">Projects</a>
+						</h3>
 					</Grid>
 				</>
 			</Drawer>
