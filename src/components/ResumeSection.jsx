@@ -51,8 +51,11 @@ function ResumeSection({ section }) {
 		content.push({
 			title: "Netflix",
 			links: [
-				{ text: "Demo", url: "https://www.google.com" },
-				{ text: "Link", url: "https://www.google.com" },
+				{ text: "Demo", url: "https://netflix-e40b5.web.app/" },
+				{
+					text: "Link",
+					url: "https://github.com/sankethbennur/netflix",
+				},
 			],
 			subHeading: {
 				text: "Technologies: MongoDB, Express, React, Node.js, JSON Web Tokens",
@@ -68,7 +71,12 @@ function ResumeSection({ section }) {
 
 		content.push({
 			title: "Web Scraper with Node.js",
-			links: [{ text: "Link", url: "https://www.google.com" }],
+			links: [
+				{
+					text: "Link",
+					url: "https://github.com/sankethbennur/nodejs-crawler",
+				},
+			],
 			subHeading: {
 				text: "Technologies: Node.js, Express, MongoDB, Cheerio, JSON",
 			},
@@ -81,7 +89,12 @@ function ResumeSection({ section }) {
 
 		content.push({
 			title: "Google and EY - BrightNetwork Internship Experience UK",
-			links: [{ text: "Link", url: "https://www.google.com" }],
+			links: [
+				{
+					text: "Link",
+					url: "https://www.brightnetwork.co.uk/certificates/internship-experience-uk-techn_p5ryyqu7j3v6ed/",
+				},
+			],
 			subHeading: {
 				text: "Technologies: Python, Node.js, Express",
 			},
