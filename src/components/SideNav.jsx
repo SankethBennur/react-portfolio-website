@@ -13,48 +13,75 @@ function SideNav() {
 				flexDirection: "column",
 				overflowY: "auto",
 				maxHeight: "100vh",
+				color: "rgba(0, 0, 0, 1)",
 			}}
 		>
-			<Box
-				component="img"
-				sx={{ height: "50%", width: "50%" }}
-				alt="Sanketh Bennur"
-				src={myPhoto}
-			/>
-			<Grid>
-				<p>loc_1</p>
-				<p>loc_2</p>
-				<p>loc_3</p>
-				<p>loc_4</p>
-				<p>loc_5</p>
-				<p>loc_1</p>
-				<p>loc_2</p>
-				<p>loc_3</p>
-				<p>loc_4</p>
-				<p>loc_5</p>
-				<p>=====</p>
-				<p>loc_1</p>
-				<p>loc_2</p>
-				<p>loc_3</p>
-				<p>loc_4</p>
-				<p>loc_5</p>
-				<p>loc_1</p>
-				<p>loc_2</p>
-				<p>loc_3</p>
-				<p>loc_4</p>
-				<p>loc_5</p>
-				<p>=====</p>
-				<p>loc_1</p>
-				<p>loc_2</p>
-				<p>loc_3</p>
-				<p>loc_4</p>
-				<p>loc_5</p>
-				<p>loc_1</p>
-				<p>loc_2</p>
-				<p>loc_3</p>
-				<p>loc_4</p>
-				<p>loc_5</p>
-			</Grid>
+			<Drawer
+				variant="permanent"
+				sx={{
+					display: { xs: "none", sm: "block" },
+					"& .MuiDrawer-paper": {
+						boxSizing: "border-box",
+						width: "25vw",
+						// backgroundColor: "rgba(0,0,0, 0)",
+					},
+				}}
+				open
+			>
+				<div>
+					{/* <Box
+						component="img"
+						sx={{ objectFit: "contain" }}
+						alt="Sanketh Bennur"
+						src={myPhoto}
+					/> */}
+					<Box
+						component="img"
+						src={myPhoto}
+						alt={"post"}
+						width="100%"
+						// height="50%"
+						position="relative"
+						display="flex"
+						zIndex={0}
+						sx={{ objectFit: "contain" }}
+					/>
+					<Grid>
+						<p>loc_1</p>
+						<p>loc_2</p>
+						<p>loc_3</p>
+						<p>loc_4</p>
+						<p>loc_5</p>
+						<p>loc_1</p>
+						<p>loc_2</p>
+						<p>loc_3</p>
+						<p>loc_4</p>
+						<p>loc_5</p>
+						<p>=====</p>
+						<p>loc_1</p>
+						<p>loc_2</p>
+						<p>loc_3</p>
+						<p>loc_4</p>
+						<p>loc_5</p>
+						<p>loc_1</p>
+						<p>loc_2</p>
+						<p>loc_3</p>
+						<p>loc_4</p>
+						<p>loc_5</p>
+						<p>=====</p>
+						<p>loc_1</p>
+						<p>loc_2</p>
+						<p>loc_3</p>
+						<p>loc_4</p>
+						<p>loc_5</p>
+						<p>loc_1</p>
+						<p>loc_2</p>
+						<p>loc_3</p>
+						<p>loc_4</p>
+						<p>loc_5</p>
+					</Grid>
+				</div>
+			</Drawer>
 		</Grid>
 	);
 }
