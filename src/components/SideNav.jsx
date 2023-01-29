@@ -3,8 +3,8 @@ import { Drawer, Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import { HashLink } from "react-router-hash-link";
 import "./SideNav.css";
-// import myPhoto from "../assets/images/me.jpg";
-import myPhoto from "../assets/images/db.jpg";
+import myPhoto from "../assets/images/me.jpg";
+// import myPhoto from "../assets/images/db.jpg";
 
 function SideNav() {
 	return (
@@ -46,7 +46,13 @@ function SideNav() {
 						position="relative"
 						display="flex"
 						zIndex={0}
-						sx={{ objectFit: "contain" }}
+						sx={{
+							objectFit: "contain",
+							boxShadow: "0 0 200px rgba(0, 210, 180, 0.66)",
+							// paddingTop: "81.25%",
+							borderRadius: "50%",
+							margin: "28px",
+						}}
 					/>
 				</Box>
 				<Grid>

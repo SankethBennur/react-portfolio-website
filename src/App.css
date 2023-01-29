@@ -4,6 +4,7 @@ body {
     background: rgba(25, 35, 50, 1);
     color: rgba(180, 180, 180, 1);
     font-family: 'Source Code Pro', monospace;
+    line-height: 21pt;
 }
 
 h1, h2 {

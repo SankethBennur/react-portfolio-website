@@ -110,6 +110,7 @@ function ResumeSection({ section }) {
 
 	return (
 		<Grid id={__id} sx={{ border: 1 }}>
+			<br />
 			<h2>{section}</h2>
 			{content.map((c) => {
 				return (
@@ -139,9 +140,12 @@ function ResumeSection({ section }) {
 							<p>{c.subHeading.text}</p>
 						</i>
 
-						{c.desc.map((__desc) => {
-							return <p>&nbsp; - {__desc}</p>;
-						})}
+						<ul>
+							{c.desc.map((__desc) => {
+								return <li>{__desc}</li>;
+							})}
+						</ul>
+						<br />
 					</Grid>
 				);
 			})}
