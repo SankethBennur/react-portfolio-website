@@ -109,7 +109,7 @@ function ResumeSection({ section }) {
 	const __id = section.split(" ").join("_").toLowerCase();
 
 	return (
-		<Grid id={__id} xs={9} sx={{ mt: 6 }}>
+		<Grid id={__id} sx={{ mt: 6, pr: 12 }}>
 			<h2>{section}</h2>
 			{content.map((c) => {
 				return (
@@ -122,7 +122,7 @@ function ResumeSection({ section }) {
 							{c.links.map((__link) => {
 								return (
 									<>
-										&nbsp;
+										&nbsp; &nbsp;
 										<a
 											href={__link.url}
 											target="_blank"

@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body {
     background: rgba(25, 35, 50, 1);
-    color: rgba(180, 180, 180, 1);
-    font-family: 'Source Code Pro', monospace;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Inconsolata', monospace;
     line-height: 21pt;
+}
+
+a, a:visited, a:hover, a:active {
+    color: lightseagreen;
+    text-decoration: none;
 }
 
 h1, h2 {
