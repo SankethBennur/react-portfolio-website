@@ -10,7 +10,6 @@ function SideNav() {
 	return (
 		<Grid
 			sx={{
-				// border: 1,
 				display: "flex",
 				flexDirection: "column",
 				overflowY: "auto",
@@ -23,10 +22,11 @@ function SideNav() {
 				sx={{
 					display: { xs: "none", sm: "block" },
 					"& .MuiDrawer-paper": {
-						boxSizing: "border-box",
-						width: "33vw",
+						width: "33%",
 						backgroundColor: "rgba(0,0,0, 0)",
 						color: "rgba(180,180,180,1)",
+						border: 0,
+						px: 10,
 					},
 				}}
 				open
@@ -48,14 +48,14 @@ function SideNav() {
 						zIndex={0}
 						sx={{
 							objectFit: "contain",
-							boxShadow: "0 0 200px rgba(0, 210, 180, 0.66)",
-							// paddingTop: "81.25%",
+							boxShadow: "0 0 150px rgba(0, 210, 180, 1)",
 							borderRadius: "50%",
 							margin: "28px",
+							ml: -10,
 						}}
 					/>
 				</Box>
-				<Grid>
+				<Grid xs={12} sx={{ mt: 6 }}>
 					<h3>
 						<HashLink to="#greetings">Back to Top</HashLink>
 					</h3>
