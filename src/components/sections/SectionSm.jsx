@@ -31,15 +31,69 @@ function SectionSm({ heading }) {
 			break;
 
 		case "Certifications":
-			content.push({});
-			content.push({});
-			content.push({});
+			content.push({
+				__title: "AWS Certified Cloud Practitioner",
+				__link: "https://www.credly.com/badges/a589778e-89a4-4a5e-8b71-c48d6bcfb5c0/public_url",
+				__styling: "no_bullets",
+			});
+			content.push({
+				__title: "Microsoft DAT203.2x Machine Learning",
+				__link: "https://courses.edx.org/certificates/9efd776a4d6d4355af7630514aac77ff",
+				__styling: "no_bullets",
+			});
+			content.push({
+				__title: "Data Science and ML Bootcamp",
+				__link: "https://www.udemy.com/certificate/UC-92e2692a-0f60-4853-9554-c61d3befd924/",
+				__styling: "no_bullets",
+			});
 			break;
+
 		case "Skills":
-			content.push({});
-			content.push({});
-			content.push({});
+			content.push({
+				__title: "Programming",
+				__desc: [
+					"Python",
+					"JavaScript",
+					"C#",
+					"Java",
+					"R",
+					"C++",
+					"BASH",
+					"Git",
+					"SQL",
+					"Elixir",
+					"HTML5",
+					"CSS3",
+				],
+				__styling: "inline",
+			});
+			content.push({
+				__title: "Tools and Technologies",
+				__desc: [
+					"AWS ELB",
+					"AWS EC2",
+					"MongoDB",
+					"Express",
+					"React",
+					"Node.js",
+					"Tornado",
+					"JQuery",
+				],
+				__styling: "inline",
+			});
+			content.push({
+				__title: "Soft Skills",
+				__desc: [
+					"Active Listening",
+					"Creativity",
+					"Root-Cause Problem Analysis",
+					"Dedicated",
+					"Detail-Oriented",
+				],
+				__styling: "inline",
+			});
 			break;
+
 		case "Hobbies":
 			content.push({
 				__desc: [
@@ -52,12 +106,22 @@ function SectionSm({ heading }) {
 				__styling: "bullets",
 			});
 			break;
+
 		default:
 			break;
 	}
 
+	let addIcon = function (__key) {
+		switch (__key) {
+			case "":
+				return <></>;
+			default:
+				return <></>;
+		}
+	};
+
 	let addContent = function (__style, __desc) {
-		if (__desc && __desc.length > 0)
+		if (__desc)
 			switch (__style) {
 				case "inline":
 					return <div>{__desc.join(" | ")}</div>;
@@ -83,13 +147,27 @@ function SectionSm({ heading }) {
 	};
 
 	return (
-		<Grid xs={6}>
+		<Grid id={heading ? heading.toLowerCase() : null} xs={6}>
 			<h2>{heading}</h2>
 			{content.map((elem) => {
 				return (
 					<Grid xs={10}>
-						{elem.__title ? <h3>{elem.__title}</h3> : <></>}
+						{elem.__title ? <b>{elem.__title}</b> : <></>}
 						{addContent(elem.__styling, elem.__desc)}
+						<div>
+							{elem.__link ? (
+								<a
+									href={elem.__link}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<i>Certificate Link</i>
+								</a>
+							) : (
+								<></>
+							)}
+						</div>
+						<br />
 					</Grid>
 				);
 			})}

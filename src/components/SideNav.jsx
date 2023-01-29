@@ -82,9 +82,42 @@ function SideNav() {
 									Projects
 								</HashLink>
 							</li>
+							<li>
+								<HashLink
+									to="#education"
+									style={{ paddingLeft: 25 }}
+								>
+									Education
+								</HashLink>
+							</li>
+							<li>
+								<HashLink
+									to="#certifications"
+									style={{ paddingLeft: 25 }}
+								>
+									Certifications
+								</HashLink>
+							</li>
+							<li>
+								<HashLink
+									to="#skills"
+									style={{ paddingLeft: 25 }}
+								>
+									Skills
+								</HashLink>
+							</li>
+							<li>
+								<HashLink
+									to="#hobbies"
+									style={{ paddingLeft: 25 }}
+								>
+									Hobbies
+								</HashLink>
+							</li>
 						</b>
 					</ul>
 				</Grid>
+				{/* Hardcoded: */}
 				<Grid sx={{ lineHeight: "15px" }}>
 					<h3>Connect with me</h3>
 					<p>Phone:&nbsp;+91 6362 010 530</p>
@@ -97,6 +130,26 @@ function SideNav() {
 							rel="noopener noreferrer"
 						>
 							github.com/sankethbennur
+						</a>
+					</p>
+					<p>
+						Instagram:&nbsp;
+						<a
+							href={"https://www.instagram.com/_lateralus_/"}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							@_lateralus_
+						</a>
+					</p>
+					<p>
+						Linkedin:&nbsp;
+						<a
+							href={"https://www.linkedin.com/in/sbennur"}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							linkedin.com/in/sbennur
 						</a>
 					</p>
 				</Grid>
