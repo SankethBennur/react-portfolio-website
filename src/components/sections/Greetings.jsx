@@ -4,37 +4,36 @@ import "./Greetings.css";
 
 function Greetings() {
 	return (
-		<Grid container id="greetings">
+		<Grid container id="greetings" sx={{ my: 3 }}>
 			<Grid
 				item
 				xs={5}
 				sx={{
-					px: 5,
 					display: "flex",
 					flexDirection: "column",
 					alignItems: "flex-end",
 					justifyContent: "auto",
-					// marginTop: "auto",
 				}}
 			>
-				<h1 style={{ color: "lightGreen" }}>Greetings!</h1>
+				<h1 style={{ color: "lightGreen", alignSelf: "flex-start" }}>
+					Greetings!
+				</h1>
 				<p>I am Sanketh Bennur</p>
 			</Grid>
 			<Grid
 				item
 				xs={7}
 				sx={{
-					borderLeft: 2,
-					pl: 3,
+					pl: 15,
+					pt: 5,
 					display: "flex",
 					flexDirection: "column",
-					// alignItems: "center",
 					margin: "auto",
 				}}
 			>
-				<div>Technology enthusiast</div>
-				<div>Enjoy great stories and Art</div>
-				<div>Love Adventures and Outdoors</div>
+				<div> {">"}&nbsp; Technology enthusiast</div>
+				<div> {">"}&nbsp; Enjoy great stories and art</div>
+				<div> {">"}&nbsp; Love adventures and outdoors</div>
 			</Grid>
 		</Grid>
 	);

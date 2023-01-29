@@ -6,7 +6,7 @@ import ResumeSectionPair from "./sections/ResumeSectionPair";
 
 function Contents() {
 	return (
-		<Grid item xs={8} sx={{ pr: 5 }}>
+		<Grid item xs={8} sx={{ px: 3 }}>
 			<Greetings />
 			<Divider sx={{ width: "100%", bgcolor: "white" }} />
 

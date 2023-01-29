@@ -22,3 +22,18 @@ h1, h2 {
 h2 {
     color:lightseagreen;
 }
+
+::-webkit-scrollbar { 
+    width: 2px;
+}
+::-webkit-scrollbar-track { 
+    background:rgb(0, 75, 0);
+    /* background: hsl(120 75% 50% / 1);  */
+    /* background:rgb(0, 97, 86); */
+}
+::-webkit-scrollbar-thumb { 
+    background: hsl(120 75% 50% / 1); 
+    border-radius: 100vw;
+    /* background:hsl(120 100% 10% / 1); */
+    /* background: rgb(19, 169, 19); */
+}
