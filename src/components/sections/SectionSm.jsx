@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Box } from "@mui/material";
+import { Grid } from "@mui/material";
 import "./SectionSm.css";
 
 import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
@@ -7,6 +7,12 @@ import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import BorderColorIcon from "@mui/icons-material/BorderColor";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
+
+import TerminalIcon from "@mui/icons-material/Terminal";
+import ConstructionIcon from "@mui/icons-material/Construction";
+import ForumIcon from "@mui/icons-material/Forum";
+
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 function SectionSm({ heading }) {
 	let content = [];
@@ -129,6 +135,12 @@ function SectionSm({ heading }) {
 				return <BorderColorIcon fontSize="large" sx={{ py: 2 }} />;
 			case "photography":
 				return <CameraAltIcon fontSize="large" sx={{ py: 2 }} />;
+			case "programming":
+				return <TerminalIcon fontSize="large" sx={{ py: 2 }} />;
+			case "toolsandtechnologies":
+				return <ConstructionIcon fontSize="large" sx={{ py: 2 }} />;
+			case "softskills":
+				return <ForumIcon fontSize="large" sx={{ py: 2 }} />;
 			default:
 				return <></>;
 		}
@@ -186,25 +198,47 @@ function SectionSm({ heading }) {
 			<h2>{heading}</h2>
 			{content.map((elem) => {
 				return (
-					<Grid xs={10}>
-						{elem.__title ? <b>{elem.__title}</b> : <></>}
-						{addContent(elem.__styling, elem.__desc, () => {
-							return elem.__title === "Hobbies";
-						})}
-						{/* Hardcoded hobbies icons part */}
-						<div>
-							{elem.__link ? (
-								<a
-									href={elem.__link}
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<i>Certificate Link</i>
-								</a>
+					<Grid xs={10} sx={{ pt: 2 }}>
+						<div
+							style={{
+								display: "flex",
+								flexDirection: "row",
+								alignItems: "center",
+								marginTop: "auto",
+								paddingTop: "3px",
+							}}
+						>
+							{/* Hardcoded Link Icon for Certifications */}
+							<div>
+								{elem.__link ? (
+									<a
+										href={elem.__link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										{/* <i>Certificate Link</i> */}
+										<OpenInNewIcon
+											sx={{ display: "flex" }}
+										/>
+									</a>
+								) : (
+									<></>
+								)}
+							</div>
+							{/* Hardcoded Kills Icons */}
+							{heading === "Skills" ? (
+								addIcon(elem.__title)
 							) : (
 								<></>
 							)}
+							&nbsp; &nbsp;
+							{elem.__title ? <b>{elem.__title}</b> : <></>}
 						</div>
+						{/* Adding Content */}
+						{/* Hardcoded hobbies icons part */}
+						{addContent(elem.__styling, elem.__desc, () => {
+							return elem.__title === "Hobbies";
+						})}
 						<br />
 					</Grid>
 				);

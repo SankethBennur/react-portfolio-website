@@ -4,7 +4,6 @@ import { Box } from "@mui/system";
 import { HashLink } from "react-router-hash-link";
 import "./SideNav.css";
 import myPhoto from "../assets/images/me.jpg";
-// import myPhoto from "../assets/images/db.jpg";
 
 function SideNav() {
 	return (

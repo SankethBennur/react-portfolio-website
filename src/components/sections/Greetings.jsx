@@ -7,24 +7,25 @@ function Greetings() {
 		<Grid container id="greetings" sx={{ my: 3 }}>
 			<Grid
 				item
-				xs={5}
+				xs={7}
 				sx={{
 					display: "flex",
 					flexDirection: "column",
 					alignItems: "flex-end",
 					justifyContent: "auto",
+					pr: 4,
 				}}
 			>
-				<h1 style={{ color: "lightGreen", alignSelf: "flex-start" }}>
+				<h1 style={{ color: "lightGreen", alignSelf: "flex-end" }}>
 					Greetings!
 				</h1>
 				<p>I am Sanketh Bennur</p>
 			</Grid>
 			<Grid
 				item
-				xs={7}
+				xs={5}
 				sx={{
-					pl: 15,
+					pl: 1,
 					pt: 5,
 					display: "flex",
 					flexDirection: "column",

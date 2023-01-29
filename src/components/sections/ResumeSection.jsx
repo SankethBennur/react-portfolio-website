@@ -136,10 +136,10 @@ function ResumeSection({ section }) {
 						</Grid>
 
 						<i>
-							<p>{c.subHeading.text}</p>
+							<p style={{ margin: "0px" }}>{c.subHeading.text}</p>
 						</i>
 
-						<ul>
+						<ul style={{ margin: "3px" }}>
 							{c.desc.map((__desc) => {
 								return <li>{__desc}</li>;
 							})}
