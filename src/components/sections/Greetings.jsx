@@ -7,13 +7,13 @@ function Greetings() {
 		<Grid container id="greetings" sx={{ my: 3 }}>
 			<Grid
 				item
-				xs={7}
+				xs={6}
 				sx={{
 					display: "flex",
 					flexDirection: "column",
 					alignItems: "flex-end",
 					justifyContent: "auto",
-					pr: 4,
+					pr: 3,
 				}}
 			>
 				<h1 style={{ color: "lightGreen", alignSelf: "flex-end" }}>
@@ -23,9 +23,9 @@ function Greetings() {
 			</Grid>
 			<Grid
 				item
-				xs={5}
+				xs={6}
 				sx={{
-					pl: 1,
+					pl: 3,
 					pt: 5,
 					display: "flex",
 					flexDirection: "column",
