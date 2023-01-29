@@ -27,7 +27,7 @@ function SideNav() {
 						backgroundColor: "rgba(0,0,0, 0)",
 						color: "rgba(255,255,255,1)",
 						border: 0,
-						px: 10,
+						px: 5,
 					},
 				}}
 				open
