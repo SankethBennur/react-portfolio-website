@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 
 body {
     background: rgba(25, 40, 60, 1);
@@ -10,14 +10,15 @@ body {
 }
 
 a, a:visited, a:hover, a:active {
-    color: lightseagreen;
+    color: mediumturquoise;
     text-decoration: none;
 }
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
+    margin-bottom: 0;
 }
 
 h2 {
-    color:mediumturquoise;
+    color:lightseagreen;
 }
