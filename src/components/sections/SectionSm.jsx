@@ -1,6 +1,12 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import "./SectionSm.css";
+
+import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
+import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import BorderColorIcon from "@mui/icons-material/BorderColor";
+import CameraAltIcon from "@mui/icons-material/CameraAlt";
 
 function SectionSm({ heading }) {
 	let content = [];
@@ -103,7 +109,7 @@ function SectionSm({ heading }) {
 					"Sketching",
 					"Photography",
 				],
-				__styling: "bullets",
+				__styling: "no_bullets",
 			});
 			break;
 
@@ -112,15 +118,24 @@ function SectionSm({ heading }) {
 	}
 
 	let addIcon = function (__key) {
-		switch (__key) {
-			case "":
-				return <></>;
+		switch (__key.split(" ").join("").toLowerCase()) {
+			case "cycling":
+				return <DirectionsBikeIcon fontSize="large" sx={{ py: 2 }} />;
+			case "basketball":
+				return <SportsBasketballIcon fontSize="large" sx={{ py: 2 }} />;
+			case "videogames":
+				return <SportsEsportsIcon fontSize="large" sx={{ py: 2 }} />;
+			case "sketching":
+				return <BorderColorIcon fontSize="large" sx={{ py: 2 }} />;
+			case "photography":
+				return <CameraAltIcon fontSize="large" sx={{ py: 2 }} />;
 			default:
 				return <></>;
 		}
 	};
 
-	let addContent = function (__style, __desc) {
+	let addContent = function (__style, __desc, __include_icons) {
+		// Hardcoded hobbies icons part
 		if (__desc)
 			switch (__style) {
 				case "inline":
@@ -129,7 +144,17 @@ function SectionSm({ heading }) {
 					return (
 						<div>
 							{__desc.map((point) => (
-								<div>{point}</div>
+								<div
+									style={{
+										display: "flex",
+										flexDirection: "row",
+										alignItems: "center",
+									}}
+								>
+									{__include_icons ? addIcon(point) : <></>}
+									&nbsp; &nbsp;
+									{point}
+								</div>
 							))}
 						</div>
 					);
@@ -137,7 +162,17 @@ function SectionSm({ heading }) {
 					return (
 						<ul>
 							{__desc.map((point) => (
-								<li>{point}</li>
+								<li
+									style={{
+										display: "flex",
+										flexDirection: "row",
+										alignItems: "center",
+									}}
+								>
+									{__include_icons ? addIcon(point) : <></>}
+									&nbsp; &nbsp;
+									{point}
+								</li>
 							))}
 						</ul>
 					);
@@ -153,7 +188,10 @@ function SectionSm({ heading }) {
 				return (
 					<Grid xs={10}>
 						{elem.__title ? <b>{elem.__title}</b> : <></>}
-						{addContent(elem.__styling, elem.__desc)}
+						{addContent(elem.__styling, elem.__desc, () => {
+							return elem.__title === "Hobbies";
+						})}
+						{/* Hardcoded hobbies icons part */}
 						<div>
 							{elem.__link ? (
 								<a

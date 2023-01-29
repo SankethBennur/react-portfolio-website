@@ -5,9 +5,11 @@ import SectionSm from "./SectionSm";
 
 function ResumeSectionPair({ sectionPairs }) {
 	return (
-		<Grid container>
-			<SectionSm heading={sectionPairs[0]}></SectionSm>
-			<SectionSm heading={sectionPairs[1]}></SectionSm>
+		<Grid item>
+			<Grid container>
+				<SectionSm heading={sectionPairs[0]}></SectionSm>
+				<SectionSm heading={sectionPairs[1]}></SectionSm>
+			</Grid>
 		</Grid>
 	);
 }

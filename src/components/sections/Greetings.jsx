@@ -7,6 +7,7 @@ function Greetings() {
 		<Grid id="greetings">
 			<h1 style={{ color: "lightGreen" }}>Greetings!</h1>
 			<p>I am Sanketh Bennur</p>
+			<br />
 		</Grid>
 	);
 }
