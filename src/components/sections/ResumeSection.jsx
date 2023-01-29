@@ -114,14 +114,25 @@ function ResumeSection({ section }) {
 			{content.map((c) => {
 				return (
 					<Grid>
-						<Grid container>
-							<h3 style={{ marginTop: 0, marginBottom: 0 }}>
+						<Grid
+							container
+							sx={{
+								display: "flex",
+								alignItems: "center",
+							}}
+						>
+							<h3
+								style={{
+									marginTop: "10px",
+									marginBottom: "8px",
+								}}
+							>
 								{c.title}
 							</h3>
 
 							{c.links.map((__link) => {
 								return (
-									<>
+									<div>
 										&nbsp; &nbsp;
 										<a
 											href={__link.url}
@@ -130,7 +141,7 @@ function ResumeSection({ section }) {
 										>
 											{__link.text}
 										</a>
-									</>
+									</div>
 								);
 							})}
 						</Grid>
