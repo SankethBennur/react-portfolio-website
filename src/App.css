@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body {
-    background: rgba(25, 35, 50, 1);
+    background: rgba(25, 40, 60, 1);
     color: rgba(255, 255, 255, 1);
-    font-family: 'Inconsolata', monospace;
     line-height: 21pt;
+    font-family: 'Inconsolata', monospace;
+    font-size: large;
 }
 
 a, a:visited, a:hover, a:active {

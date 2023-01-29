@@ -4,7 +4,6 @@ import "./Greetings.css";
 
 function Greetings() {
 	return (
-		// <Grid id="greetings" sx={{ border: 1 }}>
 		<Grid id="greetings">
 			<h1 style={{ color: "lightGreen" }}>Greetings!</h1>
 			<p>I am Sanketh Bennur</p>

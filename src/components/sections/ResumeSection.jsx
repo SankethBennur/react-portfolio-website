@@ -109,7 +109,7 @@ function ResumeSection({ section }) {
 	const __id = section.split(" ").join("_").toLowerCase();
 
 	return (
-		<Grid id={__id} sx={{ mt: 6, pr: 12 }}>
+		<Grid id={__id} sx={{ pr: 12 }}>
 			<h2>{section}</h2>
 			{content.map((c) => {
 				return (

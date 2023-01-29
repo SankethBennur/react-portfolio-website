@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import Greetings from "./Greetings";
-import ResumeSection from "./ResumeSection";
+import Greetings from "./sections/Greetings";
+import ResumeSection from "./sections/ResumeSection";
 
 function Contents() {
 	return (

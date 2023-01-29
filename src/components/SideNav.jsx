@@ -52,31 +52,43 @@ function SideNav() {
 							objectFit: "contain",
 							boxShadow: "0 0 100px rgba(0, 255, 210, 1)",
 							borderRadius: "100%",
-							// margin: "28px",
 						}}
 					/>
 				</Box>
 				<Grid xs={12} sx={{ my: 3 }}>
 					<ul>
-						<h3>
+						<b>
 							<li>
-								<HashLink to="#greetings">Back to Top</HashLink>
+								<HashLink
+									to="#greetings"
+									style={{ paddingLeft: 25 }}
+								>
+									Back to Top
+								</HashLink>
 							</li>
 							<li>
-								<HashLink to="#work_experience">
+								<HashLink
+									to="#work_experience"
+									style={{ paddingLeft: 25 }}
+								>
 									Work Experience
 								</HashLink>
 							</li>
 							<li>
-								<HashLink to="#projects">Projects</HashLink>
+								<HashLink
+									to="#projects"
+									style={{ paddingLeft: 25 }}
+								>
+									Projects
+								</HashLink>
 							</li>
-						</h3>
+						</b>
 					</ul>
 				</Grid>
 				<Grid sx={{ lineHeight: "15px" }}>
 					<h3>Connect with me</h3>
-					<p>Phone:&nbsp;+91 9876 543 210</p>
-					<p>Email:&nbsp;xyz@gmail.com</p>
+					<p>Phone:&nbsp;+91 6362 010 530</p>
+					<p>Email:&nbsp;sankethbennur@gmail.com</p>
 					<p>
 						Github:&nbsp;
 						<a
