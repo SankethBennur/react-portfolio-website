@@ -7,23 +7,42 @@ function Greetings() {
 		<Grid container id="greetings" sx={{ my: 3 }}>
 			<Grid
 				item
-				xs={6}
+				xs={12}
+				sm={6}
+				md={6}
 				sx={{
 					display: "flex",
 					flexDirection: "column",
-					alignItems: "flex-end",
+					// alignItems: "flex-end",
+					alignItems: {
+						xs: "center",
+						sm: "flex-end",
+						md: "flex-end",
+					},
 					justifyContent: "auto",
 					pr: 3,
 				}}
 			>
-				<h1 style={{ color: "lightGreen", alignSelf: "flex-end" }}>
+				{/* <h1 style={{ color: "lightGreen", alignSelf: "flex-end" }}> */}
+				<h1
+					style={{
+						color: "lightGreen",
+						// alignSelf: {
+						// 	xs: "flex-start",
+						// 	sm: "flex-end",
+						// 	md: "flex-end",
+						// },
+					}}
+				>
 					Greetings!
 				</h1>
 				<p>I am Sanketh Bennur</p>
 			</Grid>
 			<Grid
 				item
-				xs={6}
+				xs={12}
+				sm={6}
+				md={6}
 				sx={{
 					pl: 3,
 					pt: 5,
