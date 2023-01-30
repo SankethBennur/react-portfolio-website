@@ -194,7 +194,7 @@ function SectionSm({ heading }) {
 	};
 
 	return (
-		<Grid id={heading ? heading.toLowerCase() : null} xs={6}>
+		<Grid id={heading ? heading.toLowerCase() : null} xs={12} sm={6} md={6}>
 			<h2>{heading}</h2>
 			{content.map((elem) => {
 				return (
