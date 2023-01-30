@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 
 function ContactFooter() {
 	return (
-		<Grid sx={{ lineHeight: "15px", mb: 5 }}>
+		<Grid sx={{ lineHeight: "15px", my: 5 }}>
 			{/* Hardcoded: */}
 			<h3>Connect with me</h3>
 			<p>Phone:&nbsp;+91 6362 010 530</p>

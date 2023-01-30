@@ -11,12 +11,10 @@ import ContactFooter from "./NavSections/ContactFooter";
 
 function Contents() {
 	return (
-		// <Grid item sm={12} md={8} xs={8} sx={{ px: 4 }}>
 		<Grid item xs={12} sm={8} md={8} sx={{ px: 4 }}>
 			{/* Portfolio Picture */}
 			<Grid sx={{ display: { xs: "block", sm: "none", md: "none" } }}>
 				<PortfolioPicture />
-				<Divider sx={{ width: "100%", bgcolor: "white" }} />
 			</Grid>
 
 			<Greetings />

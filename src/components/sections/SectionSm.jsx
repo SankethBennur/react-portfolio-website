@@ -199,8 +199,8 @@ function SectionSm({ heading }) {
 			{content.map((elem) => {
 				return (
 					<Grid xs={10} sx={{ pt: 2 }}>
-						<div
-							style={{
+						<Grid
+							sx={{
 								display: "flex",
 								flexDirection: "row",
 								alignItems: "center",
@@ -209,8 +209,8 @@ function SectionSm({ heading }) {
 							}}
 						>
 							{/* Hardcoded Link Icon for Certifications */}
-							<div>
-								{elem.__link ? (
+							{elem.__link ? (
+								<div>
 									<a
 										href={elem.__link}
 										target="_blank"
@@ -221,11 +221,11 @@ function SectionSm({ heading }) {
 											sx={{ display: "flex" }}
 										/>
 									</a>
-								) : (
-									<></>
-								)}
-							</div>
-							{/* Hardcoded Kills Icons */}
+								</div>
+							) : (
+								<></>
+							)}
+							{/* Hardcoded Skills Icons */}
 							{heading === "Skills" ? (
 								addIcon(elem.__title)
 							) : (
@@ -233,7 +233,7 @@ function SectionSm({ heading }) {
 							)}
 							&nbsp; &nbsp;
 							{elem.__title ? <b>{elem.__title}</b> : <></>}
-						</div>
+						</Grid>
 						{/* Adding Content */}
 						{/* Hardcoded hobbies icons part */}
 						{addContent(elem.__styling, elem.__desc, () => {
