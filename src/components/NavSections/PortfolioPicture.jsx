@@ -23,7 +23,7 @@ function PortfolioPicture() {
 				sx={{
 					objectFit: "contain",
 					boxShadow: "0 0 100px rgba(0, 255, 210, 1)",
-					borderRadius: "100%",
+					borderRadius: "5%",
 				}}
 			/>
 		</Box>

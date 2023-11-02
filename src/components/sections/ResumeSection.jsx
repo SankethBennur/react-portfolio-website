@@ -164,9 +164,20 @@ function ResumeSection({ section }) {
 							})}
 						</Grid>
 
-						<i>
-							<p style={{ margin: "0px" }}>{c.subHeading.text}</p>
-						</i>
+						<p style={{ margin: "0px" }}>
+							<i>
+								{c.subHeading.text}
+							</i>
+							{(section === "Work Experience")
+								? <>
+									&nbsp;|&nbsp;
+									<i>
+										{c.subHeading.date}
+									</i>
+								</>
+								: <></>
+							}
+						</p>
 
 						<ul style={{ margin: "3px" }}>
 							{c.desc.map((__desc) => {
