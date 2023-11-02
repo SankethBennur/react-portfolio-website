@@ -64,13 +64,12 @@ function SectionSm({ heading }) {
 			content.push({
 				__title: "Programming",
 				__desc: [
-					"Python",
 					"JavaScript",
-					"C#",
-					"Java",
-					"R",
 					"C++",
+					"Python",
+					"Java",
 					"BASH",
+					"C#",
 					"Git",
 					"SQL",
 					"Elixir",
@@ -82,14 +81,15 @@ function SectionSm({ heading }) {
 			content.push({
 				__title: "Tools and Technologies",
 				__desc: [
-					"AWS ELB",
-					"AWS EC2",
+					"Salesforce",
+					"Heroku",
+					"AWS",
 					"MongoDB",
 					"Express",
 					"React",
 					"Node.js",
-					"Tornado",
 					"JQuery",
+					"PostgresDB",
 				],
 				__styling: "inline",
 			});

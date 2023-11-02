@@ -8,6 +8,25 @@ function ResumeSection({ section }) {
 	// API call based on section - Work Experience
 	if (section === "Work Experience") {
 		content.push({
+			title: "Kasmo Inc",
+			links: [
+				{
+					text: "Company",
+					url: "https://kasmo.co/",
+				},
+			],
+			subHeading: {
+				text: "Associate Software Engineer",
+				date: "Jul 2023 - Present",
+			},
+			desc: [
+				"Working on applications deployed on Heroku and integrated with Salesforce.",
+				"Building applications with NodeJs, Express frameworks for backend and ReactJS for frontend of an application.",
+				"Designing APIs and database entities with PostgresDB and Salesforce Objects.",
+				"Utilized Salesforce Workflow Rules and Outbound Messages to automate various operations.",
+			],
+		});
+		content.push({
 			title: "Quickmetrix",
 			links: [
 				{
@@ -17,12 +36,11 @@ function ResumeSection({ section }) {
 			],
 			subHeading: {
 				text: "Software Engineer - Full Stack Developer",
-				date: "Jan 2022 - Present",
+				date: "Jan 2022 - Jun 2023",
 			},
 			desc: [
 				"Quickmetrix is a web application that helps businesses in empowering their brands through Social Media Response Management and Brand Measurement.",
-				"Worked with Python and Tornado Framework on the server-side and with vanilla Javascript on the client-side on various systems of the application.",
-				"Overhauled the Application Dashboard using React to aid clients in Brand Performance, User Engagement, Competition Benchmarking etc.",
+				"Worked with Python and Tornado Framework on the server-side and with ReactJS on the client-side on various systems of the application.",
 				"Built Application Systems for cron job scheduling using Google Cloud Scheduler, sending and receiving mails for Gmail users using Gmail API, fetching Instagram Insights for client Business IDs using Facebook Graph API and many others.",
 			],
 		});
