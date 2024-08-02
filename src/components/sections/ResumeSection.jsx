@@ -8,6 +8,24 @@ function ResumeSection({ section }) {
 	// API call based on section - Work Experience
 	if (section === "Work Experience") {
 		content.push({
+			title: "Socion",
+			links: [
+				{
+					text: "Company",
+					url: "https://www.socion.io/",
+				},
+			],
+			subHeading: {
+				text: "Analyst",
+				date: "Apr 2024 - Present",
+			},
+			desc: [
+				"Socion partners with NGOs, development agencies & government institutions to tackle may societal challenges such as climate change, poverty, public health etc.",
+				"It features a SaaS platform for capacity building, participant training, data insights through dashboards, tracking Sustainable Development Goals (SDG) and others.",
+				"Utilizing Power BI to build models from data coming in from APIs and other sources, making visualizations for data analysis, & creating dashboards for many programs.",
+			],
+		});
+		content.push({
 			title: "Kasmo Inc",
 			links: [
 				{
@@ -16,14 +34,15 @@ function ResumeSection({ section }) {
 				},
 			],
 			subHeading: {
-				text: "Associate Software Engineer",
-				date: "Jul 2023 - Present",
+				text: "Software Engineer",
+				date: "Jul 2023 - Jan 2024",
 			},
 			desc: [
-				"Working on applications deployed on Heroku and integrated with Salesforce.",
-				"Building applications with NodeJs, Express frameworks for backend and ReactJS for frontend of an application.",
-				"Designing APIs and database entities with PostgresDB and Salesforce Objects.",
-				"Utilized Salesforce Workflow Rules and Outbound Messages to automate various operations.",
+				"Built applications with NodeJs-Express framework for backend & ReactJS for frontend.",
+				"Worked as a team lead for interns, helped in their training on REST APIs and in developing mobile applications using React Native.",
+				"Designed APIs and database entities with PostgresDB and Salesforce Objects.",
+				"Deployed server applications on Heroku and integrated with Salesforce.",
+				"Utilized Salesforce Workflow Rules and Outbound Messages to automate operations.",
 			],
 		});
 		content.push({
@@ -69,7 +88,7 @@ function ResumeSection({ section }) {
 		content.push({
 			title: "Netflix",
 			links: [
-				{ text: "Demo", url: "https://netflix-e40b5.web.app/" },
+				{ text: "Demo", url: "https://nf-clone-client.web.app/" },
 				{
 					text: "Link",
 					url: "https://github.com/sankethbennur/netflix",
@@ -79,29 +98,43 @@ function ResumeSection({ section }) {
 				text: "Technologies: MongoDB, Express, React, Node.js, JSON Web Tokens",
 			},
 			desc: [
-				"Netflix Clone Web Application using RESTful APIs built on MERN Stack. 1",
+				"Netflix Clone Web Application using RESTful APIs built on MERN Stack.",
 				"Backend involved utilizing JWT Tokens to perform User- Authentication.",
 				"Password Encryption is performed using Crypto-js Library.",
-				"Frontend involved using functional components in React",
-				"performed dynamic routing in the web application.",
+				"Frontend involved using functional components in React and performed dynamic routing in the web application.",
 			],
 		});
 
 		content.push({
-			title: "Web Scraper with Node.js",
+			title: "Salesforce Server App",
 			links: [
 				{
 					text: "Link",
-					url: "https://github.com/sankethbennur/nodejs-crawler",
+					url: "https://github.com/SankethBennur/sf-app",
 				},
 			],
 			subHeading: {
-				text: "Technologies: Node.js, Express, MongoDB, Cheerio, JSON",
+				text: "Technologies: Salesforce, JS-Force",
 			},
 			desc: [
-				"Performed Web-Scraping and HTML Parsing with Cheerio, built using Node.js.",
-				"Crawled recursively through pages contained in Pagination of stackoverflow/questions webpage.",
-				"Fetched individual elements as JSON objects and pushed into a CSV file and MongoDB Database.",
+				"This project helps connect your salesforce account with a Node.js Server application, and begin operating on SF objects.",
+			],
+		});
+
+		content.push({
+			title: "Unreal Engine Gameplay Ability System",
+			links: [
+				{
+					text: "Link",
+					url: "https://github.com/SankethBennur/unreal-engine-GAS-tutorial",
+				},
+			],
+			subHeading: {
+				text: "Technologies: C++, Unreal Engine 5.2",
+			},
+			desc: [
+				"As a hobby, implemented the advance Gameplay Ability System framework into an Unreal Engine Project in C++.",
+				"Made many features of gameplay, such as Passives, Effect-Calculations, Statuses etc. inspired by the video game DotA 2.",
 			],
 		});
 
@@ -137,14 +170,12 @@ function ResumeSection({ section }) {
 							sx={{
 								display: "flex",
 								alignItems: "center",
-							}}
-						>
+							}}>
 							<h3
 								style={{
 									marginTop: "10px",
 									marginBottom: "8px",
-								}}
-							>
+								}}>
 								{c.title}
 							</h3>
 
@@ -155,8 +186,7 @@ function ResumeSection({ section }) {
 										<a
 											href={__link.url}
 											target="_blank"
-											rel="noopener noreferrer"
-										>
+											rel="noopener noreferrer">
 											{__link.text}
 										</a>
 									</div>
@@ -165,18 +195,15 @@ function ResumeSection({ section }) {
 						</Grid>
 
 						<p style={{ margin: "0px" }}>
-							<i>
-								{c.subHeading.text}
-							</i>
-							{(section === "Work Experience")
-								? <>
+							<i>{c.subHeading.text}</i>
+							{section === "Work Experience" ? (
+								<>
 									&nbsp;|&nbsp;
-									<i>
-										{c.subHeading.date}
-									</i>
+									<i>{c.subHeading.date}</i>
 								</>
-								: <></>
-							}
+							) : (
+								<></>
+							)}
 						</p>
 
 						<ul style={{ margin: "3px" }}>
